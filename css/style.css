@@ -29,13 +29,14 @@ header h1 {
   color: #00e0ff;
   transition: 0.2s ease-in-out;
 }
-header h1:hover, a:hover {
-  color: #fff;
+header h1:hover {
+  color: #00e0ff;
+  text-shadow: 0 0 4px #00e0ff;
 }
 
 /*estilização do corpo que contem as informações do site*/
 .container {
-  /*flex-wrap:wrap; /*Quebra os elementos um do lado do outro.*/
+  flex-wrap:wrap; /*Quebra os elementos um do lado do outro.*/
   justify-content: space-evenly; /*Distribui os elementos igualmente no espaço disponível.*/
   gap: 50px; /*Insere um espaço nas linhas e colunas entre os elementos.*/
   padding: 25px 100px; /*Margens internas superior e inferior de 0, e esquerda e direita de 40px.*/
@@ -60,10 +61,14 @@ header h1:hover, a:hover {
 .container a{
   color: #fff;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
+
 }
+/*deixando o texto "neon" quando o cursor no mouse passa por cime*/
 .container a:hover{
   color: #00e0ff;
+  text-shadow: 0 0 4px #00e0ff;
+
 }
 
 /*estilização da imagem*/
