@@ -39,7 +39,7 @@ header h1:hover {
   flex-wrap:wrap; /*Quebra os elementos um do lado do outro.*/
   justify-content: space-evenly; /*Distribui os elementos igualmente no espaço disponível.*/
   gap: 50px; /*Insere um espaço nas linhas e colunas entre os elementos.*/
-  padding: 50px 100px; /*Margens internas superior e inferior de 0, e esquerda e direita de 40px.*/
+  padding: 25px 100px; /*Margens internas superior e inferior de 0, e esquerda e direita de 40px.*/
   position: relative;
 
 }
