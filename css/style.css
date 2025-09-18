@@ -1,114 +1,127 @@
-/*estilização do corpo*/
-body {
-  width: auto;
-  height: auto;
-  
-  background-color: #333;
-  color: #fff;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+:root{
+    --bg1:#0d1117; 
+    --bg2:#1c1f26; 
+    --accent:#00c4d6; 
+    --muted:#9ba3b4;
 }
 
-/*cabeçalho do site*/
-header {
-  background-color: #222;
-  padding: 25px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0
 }
-header h1 {
-  font-size: 2.8em;
-  font-weight: 200;
-  font-family: Arial, Helvetica, sans-serif;
-  cursor: pointer;
+  
+body{
+    font-family:'Inter',sans-serif;
+    background:linear-gradient(135deg,var(--bg1),var(--bg2));
+    color:#e6eef6;
+    line-height:1.6
+}
+  
+.container{
+    max-width:1000px;
+    margin:0 auto;
+    padding:24px
+}
+
+header{
+    text-align:center;
+    padding:20px 0
+}
+
+header h1{
+    font-size:28px;
+    font-weight:700
+}
+  
+header p{
+    color:var(--muted)
+}
+
+nav{
+    margin-top:16px;
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    flex-wrap:wrap
+}
+
+nav a{
+    color:#e6eef6;
+    text-decoration:none;
+    padding:6px 10px;
+    border-radius:8px;
+    
+}
+
+nav a:hover{
+    background:rgba(255,255,255,0.06)
+}
+
+section{
+    margin-top:40px
+}
+
+section h2{
+    font-size:22px;
+    margin-bottom:12px;
+    color:var(--accent)
+}
+
+.card{
+    background:rgba(255,255,255,0.03);
+    padding:18px;
+    border-radius:12px;
+    margin-bottom:16px
+}
+
+ul{
+    list-style:disc;
+    margin-left:20px
+}
+
+.skills,.projects,.contact{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px
+}
+
+.skill,.proj,.contact-item{
+    background:rgba(255,255,255,0.04);
+    padding:10px 12px;
+    border-radius:8px;
+    font-size:14px;
+    color:var(--muted)
+}
+
+#certificacoes a {
+  color: #ffffff;        
   text-decoration: none;
-
-  color: #00e0ff;
-  transition: 0.2s ease-in-out;
 }
-header h1 a {
+#certificacoes a:hover {
+  color: #00c4d6;       
   text-decoration: none;
-  color: #00e0ff;
-}
-header h1:hover {
-  color: #00e0ff;
-  text-shadow: 0 0 4px #00e0ff;
 }
 
-/*estilização do corpo que contem as informações do site*/
-.container {
-  flex-wrap:wrap; /*Quebra os elementos um do lado do outro.*/
-  justify-content: space-evenly; /*Distribui os elementos igualmente no espaço disponível.*/
-  gap: 50px; /*Insere um espaço nas linhas e colunas entre os elementos.*/
-  padding: 25px 100px; /*Margens internas superior e inferior de 0, e esquerda e direita de 40px.*/
-  position: relative;
-
-}
-.container p{
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal; /*espessura da fonte*/
-  text-align: justify; /*alinhamento do texto*/
-  line-height: 1.5; /*define a altura da linha*/
-}
-.container h2{
-  text-transform: uppercase; /*deixa tudo maiusculo*/
-  font-family: Arial, Helvetica, sans-serif;
-}
-.container li{
-  font-size: 25px; /*estilizando os titlos do trampo*/
-  font-family: Arial, Helvetica, sans-serif;
-}
-.container a{
-  color: #fff;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-
-}
-/*deixando o texto "neon" quando o cursor no mouse passa por cime*/
-.container a:hover{
-  color: #00e0ff;
-  text-shadow: 0 0 4px #00e0ff;
-
+.proj{
+    flex:1 1 calc(50% - 10px);
+    min-width:220px
 }
 
-/*estilização da imagem*/
-.imagem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-img {
-  width: 400px; /*estilização da borda*/
-  height: 400px; /*estilização da borda*/
-  border-radius: 200px; /*estilização da borda*/
-  
-  cursor: pointer; /*estilização do cursor do mouse quando passa por cima da imagem*/
-  border: 1px #00e0ff solid; /*cor da borda da imagem*/
-
-  object-fit: cover; /*Centraliza a imagem dentro do espaço disponível.*/
-}
-img:hover {
-  box-shadow: 0px 0px 6px #00e0ff;
+.proj a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
-/*estilização do roda pé do site*/
-footer {
-  background-color: #222;
-  padding: 25px;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact-item a{
+    color:var(--accent);
+    text-decoration:none
 }
 
-footer p {
-  font-size: 12px;
-  font-weight: 200;
-  color: #fff;
+footer{
+    text-align:center;
+    margin-top:40px;
+    color:var(--muted);
+    font-size:14px;
+    padding-bottom:20px
 }
